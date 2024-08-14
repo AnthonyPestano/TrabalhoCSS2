@@ -1,0 +1,79 @@
+@import url('./geral.css');
+
+/*telas pequenas*/
+.bb {
+    font-size:18px;
+    display: flex;
+    flex-flow: row wrap ;
+    justify-content: center;
+    padding:15px;
+  }
+.pp {
+    font-size:20px;
+    display: flex;
+    flex-flow: row wrap ;
+    justify-content: center;
+    padding:15px;
+  }
+  #i4{
+  display: inline-block;
+  width: 150px;
+  height:150px;
+  background-color: var(--cor-destaque);
+  border-radius: 20px;
+  padding:10px;
+  align-self: center;
+  }
+  /* telas medias*/ 
+  @media (min-width: 720px) {
+    .bb {
+        font-size:20px;
+        display: flex;
+        flex-flow: row wrap ;
+        justify-content: center;
+        padding:15px;
+      }
+    .pp {
+        font-size:20px;
+        display: flex;
+        flex-flow: row wrap ;
+        justify-content: center;
+        padding:15px;
+      }
+      #i4{
+        display: inline-block;
+        width: 200px;
+        height:200px;
+        background-color: var(--cor-destaque);
+        border-radius: 20px;
+        padding:10px;
+        text-align: center;
+        }
+  }
+
+  /*telas grandes*/
+  @media (min-width: 1050px) {
+    .bb {
+        font-size:25px;
+        display: flex;
+        flex-flow: row wrap ;
+        justify-content: center;
+        padding:15px;
+      }
+    .pp {
+        font-size:25px;
+        display: flex;
+        flex-flow: row wrap ;
+        align-content: center;
+        padding:15px;
+      }
+      #i4{
+        display: inline-block;
+        width: 250px;
+        height:250px;
+        background-color: var(--cor-destaque);
+        border-radius: 20px;
+        padding:10px;
+        justify-content: center;
+        }
+  }

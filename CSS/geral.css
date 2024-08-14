@@ -1,0 +1,493 @@
+@import url('./reset.css');
+@import url('./form.css');
+@import url('./galeria.css');
+@import url('./sobre.css');
+@import url('./telainicial.css');
+
+ /* **** Especificações do Projeto ****************** 
+   **************************** */
+ 
+ :root {
+  --cor-destaque: rgb(62, 197, 28);
+  --cor-principal: rgba(255, 255, 255, 0.897);
+  --cor-contraste:hsl(135, 60%, 18%);
+  font-size:16px; 
+  
+}
+
+.inria-serif-bold {
+  font-family: "Inria Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.inria-serif-light-italic {
+  font-family: "Inria Serif", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.inria-serif-regular-italic {
+  font-family: "Inria Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.inria-serif-bold-italic {
+  font-family: "Inria Serif", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+/* ********* Especificações da página */
+
+ /** Telas pequenas - Padrão**/
+
+ body{
+  background-color: var(--cor-principal);
+  color:var(--cor-contraste)
+} 
+
+ .container {
+    display: grid;
+    gap: 10px;
+    padding:10px;
+    width:clamp(360px,90vw,1920px);
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "footer";
+    font-size: 12px;
+
+  }
+
+ /* Este seletor irá selecionar todos filhos diretos do container*/
+.container > * {
+    border: 2px solid var(--cor-destaque);
+    padding:1px;
+    border-radius: 10px;
+}
+
+header {
+  grid-area: header;
+  background-color: var(--cor-destaque);
+  text-align: center;
+  font-size: 16px;
+}
+.i1{
+  display: inline;
+  width: 150px;
+}
+.t1{
+   display:none;
+}
+.i2{
+  display: inline;
+  width: 38px;
+}
+.i3{
+  display: inline-block;
+  width: 250px;
+  height:277px;
+  padding:15px;
+  background-color: var(--cor-destaque);
+  border-radius:25px;
+  text-align: center;
+  justify-content: center;
+
+}
+nav li{
+  border: 1px double var(--cor-destaque);
+  border-radius: 5px;
+  padding:4px;
+  margin-bottom: 10px;
+  list-style-type: none;
+}
+nav a{
+  color:var(--cor-principal);
+  font-size:18px;
+}
+footer li{
+  border: 1px double var(--cor-destaque);
+  border-radius: 5px;
+  padding:4px;
+  margin-bottom: 10px;
+  list-style-type: none;
+
+}
+footer a{
+  color:var(--cor-contraste);
+  font-size:20px;
+}
+
+.p{
+ display: inline;
+ font-size: 25px;
+ margin: 10px;
+ padding:10px;
+ background-color: var(--cor-principal);
+ border-radius:100px;
+ margin: 10px; 
+ text-align: center;
+ font-family: "Inria Serif", serif;
+ font-weight: 400;
+ font-style: normal;
+}
+.p2{
+  display: inline;
+  font-size: 18px;
+  margin: 10px;
+  background-color: var(--cor-principal);
+  border-radius:5px;
+  margin: 10px; 
+  padding: 3px;
+  text-align:center;
+  font-family: "Inria Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+p{
+  display: inline;
+  font-size:18px;
+  padding:5px;
+  font-family: "Inria Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+main {
+  display:inline;
+  grid-area: main;
+  background-color: var(--cor-destaque);
+  align-content: center;
+}
+nav {
+  display:inline;
+  grid-area: nav;
+  font-size: 1rem;
+  background-color: var(--cor-destaque);
+  color: var(--cor-principal);
+  text-align: center;
+}
+footer {
+  display: inline;
+  grid-area: footer;
+  background-color: var(--cor-destaque);
+  text-align: center;
+}
+#b{
+  padding:15px;
+  text-align: center;
+  font-size:20px;
+  font-family: "Inria Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.ft{
+padding:10px;
+text-align:center; 
+font-size:20px;
+width:150px;
+font-family: "Inria Serif", serif;
+font-weight: 400;
+font-style: normal;
+}
+.pgt{
+  font-size:20px;
+  font-family: "Inria Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* telas médias */
+@media (min-width: 720px) {
+  .container {
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+      "header     header"
+      "nav        nav"
+      "main      main"
+      "main      main"
+      "footer    footer";
+  }
+  :root{
+    font-size: 20px;
+  }
+header {
+  grid-area: header;
+  background-color: var(--cor-destaque);
+  text-align: center;
+}
+.i1{
+  display: inline;
+  width: 150px;
+}
+.t1{
+  padding:10px;
+  display:inline;
+  text-align:center;
+  font-size:20px;
+  font-family: "Inria Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.i2{
+  display: inline;
+  width: 60px;
+  padding:10px
+}
+.i3{
+  display: inline-block;
+  width: 250px;
+  height:260px;
+  background-color: var(--cor-destaque);
+  border-radius: 20px;
+  padding:10px;
+  text-align: center;
+}
+  nav li{
+    border: 1px double var(--cor-destaque);
+    border-radius: 5px;
+    padding:4px;
+    margin-bottom: 10px;
+    list-style-type: none;
+
+  }
+  nav a{
+    color:var(--cor-principal);
+    font-size:20px;
+  }
+  footer li{
+    border: 1px double var(--cor-destaque);
+    border-radius: 5px;
+    padding:4px;
+    margin-bottom: 10px;
+    list-style-type: none;
+
+  }
+  footer a{
+    color:var(--cor-contraste);
+    font-size:20px;
+  }
+  .p{
+  display: inline;
+  font-size: 25px;
+  background-color: var(--cor-principal);
+  border-radius:100px;
+  margin: 10px; 
+  padding:10px;
+  text-align: center;
+  font-family: "Inria Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.p2{
+  display: inline-block;
+  font-size: 17px;
+  margin: 10px;
+  background-color: var(--cor-principal);
+  border-radius:5px;
+  margin: 10px; 
+  padding: 3px;
+  justify-content: center;
+
+}
+p{
+  display: inline;
+  font-size:20px;
+  padding:5px;
+  font-family: "Inria Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+main {
+  display:inline;
+  grid-area: main;
+  background-color: var(--cor-destaque);
+  align-content: center;
+}
+nav {
+  display:inline;
+  grid-area: nav;
+  font-size: 1rem;
+  background-color: var(--cor-destaque);
+  color: var(--cor-principal);
+  text-align: center;
+}
+footer {
+  display: inline;
+  grid-area: footer;
+  background-color: var(--cor-destaque);
+  text-align: center;
+}
+#b{
+  padding:15px;
+  text-align: center;
+  font-size:30px;
+  font-family: "Inria Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.ft{
+padding:10px;
+text-align:center; 
+font-size:30px;
+width:150px;
+font-family: "Inria Serif", serif;
+font-weight: 400;
+font-style: normal;
+}
+.pgt{
+  font-size:18px;
+  font-family: "Inria Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+}
+/* telas grandes */
+@media (min-width: 1050px) {
+  .container {
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:
+      "header header  header"
+      "nav    nav    nav"
+      "main    main    main"
+      "footer footer  footer"
+   }
+  header {
+    grid-area: header;
+    background-color: var(--cor-destaque);
+    text-align: center;
+    font-size: 18px;
+  }
+  .i1{
+    display: inline;
+    width: 175px;
+  }
+  .t1{
+    display:inline;
+    text-align:center;
+    font-size:25px;
+    font-family: "Inria Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+ }
+  .i2{
+    display: inline;
+    width: 80px;
+  }
+  .i3{
+    display: inline-block;
+    width: 300px;
+    height:320px;
+    background-color: var(--cor-destaque);
+    border-radius:35px;
+    text-align: center;
+
+  }
+  nav li{
+    border: 1px double var(--cor-destaque);
+    border-radius: 5px;
+    padding:4px;
+    margin-bottom: 10px;
+    list-style-type: none;
+  }
+  nav a{
+    color:var(--cor-principal);
+    font-size:20px;
+  }
+  footer li{
+    border: 1px double var(--cor-destaque);
+    border-radius: 5px;
+    padding:4px;
+    margin-bottom: 10px;
+    list-style-type: none;
+
+  }
+  footer a{
+    color:var(--cor-contraste);
+    font-size:20px;
+  }
+  .p{
+   display: inline;
+   font-size: 25px;
+   margin: 10px;
+   padding:10px;
+   background-color: var(--cor-principal);
+   border-radius:100px;
+   margin: 10px; 
+   text-align: center;
+   font-family: "Inria Serif", serif;
+   font-weight: 400;
+   font-style: normal;
+  }
+  p{
+    display: inline;
+    font-size:20px;
+    font-family: "Inria Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .p2{
+    display: inline;
+    font-size: 25px;
+    margin: 10px;
+    background-color: var(--cor-principal);
+    border-radius:5px;
+    margin: 10px; 
+    padding: 3px;
+    text-align:center;
+    font-family: "Inria Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  main {
+    display:inline;
+    font-size: 30px;
+    grid-area: main;
+    background-color: var(--cor-destaque);
+    align-content: center;
+  }
+  nav {
+    display:inline;
+    grid-area: nav;
+    font-size: 18px;
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
+    text-align: center;
+  }
+  footer {
+    display: inline;
+    grid-area: footer;
+    background-color: var(--cor-destaque);
+    text-align: center;
+  }
+  #b{
+    padding:15px;
+    text-align: center;
+    font-size:30px;
+    font-family: "Inria Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .ft{
+  padding:10px;
+  text-align:center; 
+  font-size:20px;
+  width:250px;
+  font-family: "Inria Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  }
+  .pgt{
+    font-size:20px;
+    font-family: "Inria Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+   :root{
+    font-size: 30px
+    
+  }
+}
