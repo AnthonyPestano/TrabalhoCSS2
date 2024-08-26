@@ -39,7 +39,7 @@
      -->
   <meta property="og:title" content="Lojas Brasil">
   <meta property="og:description" content="Nas Lojas Brasil você encontra todo tipo de produto, confira!">
-  <meta property="og:image" content="URL da imagem de compartilhamento">
+  <meta property="og:image" content= img src="Imagens/lojasbrasil.png">
   <meta property="og:url" content="https://anthonypestano.github.io/TrabalhoCSS2/html">
   <meta property="og:type" content="website">
     <!-- Exemplo de Meta tag específica para o Twitter (Twitter Card). 
@@ -49,7 +49,7 @@
   <meta name="twitter:site" content="@seuUsuario">
   <meta name="twitter:title" content="Lojas Brasil">
   <meta name="twitter:description" content="Bem vindo as Lojas Brasil, aqui você encontra todo tipo de produto, confira!">
-  <meta name="twitter:image" content="URL da imagem para Twitter">
+  <meta name="twitter:image" content= img src="Imagens/lojasbrasil.png">
     <!-- Meta tags específicas para SEO (Search Engine Optimization)(Google)-->
   <meta name="revisit-after" content="10 days">
   <meta name="robots" content="index, follow">
@@ -149,7 +149,7 @@
             <img class="i3" src="Imagens/monitor.jpg" alt="Monitor"
           loading="lazy">
             <p><figcaption>  <p class=p2>   R$ 1250.00 Monitor.</p> <br> <br>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#myModal">
               Ver detalhes
             </button>
           </div>
@@ -181,13 +181,47 @@
               </div>
             </div>
           </div>
-          </figure>
-          <figure>
+
+          <div class="i3">
             <img class="i3" src="Imagens/geladeira.jpg" alt="Geladeira"
-            loading="lazy">
-            <figcaption>  <p class=p2> R$ 1999.99 Geladeira
-            </p></figcaption>
-          </figure>
+          loading="lazy">
+            <p><figcaption>  <p class=p2>   R$ 1999.99 Geladeira </p> <br> <br>
+            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#myModal">
+              Ver detalhes
+            </button>
+          </div>
+          
+          <!-- The Modal -->
+          <div class="modal" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+          
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Geladeira Eletrolux</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+          
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <img class="i4" src="Imagens/geladeira.jpg" alt="Geladeira"
+                  loading="lazy">
+                  <BR>
+                  <H4>$RS 1999.99</H4>
+                </div>
+          
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                </div>
+          
+              </div>
+            </div>
+          </div>
+
+
+
+
           <figure>
             <img class="i3" src="Imagens/ovo.webp" alt="Ovo da páscoa"
             loading="lazy">
