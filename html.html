@@ -77,6 +77,9 @@
   <meta name="geo.position" content="-23.560520;-46.333308">
     <!--****** Favicon. Não é uma meta tag ***-->
   <link rel="icon" href="Imagens/lojasbrasil.png" type="image/x-icon">
+  <style>
+    .btn-secondary { height: 100%; width: 100%; margin-bottom: 100px; } 
+</style>
 </head>
 <body>
     
@@ -96,18 +99,26 @@
         <p>Criar Conta</p>
           </header>
 
-        <nav>
-          <ul>
-          <li><p>Baixe o app    |  Lojas Oficiais | Retira rápido | VIP | </p>
-            <p> Ofertas |</p>
-            <p>Tela Inicial</p></li>
-            </ul>
-          <br> <br> <br>
-          <p>Eletrodomésticos | Eletrônicos | Móveis | Brinquedos  | Páscoa | Ferramentas </p>
+        <nav class="navbar navbar-expand-md justify-content-center sticky-top">
+          <div>
+            <ul class="navbar-nav">
+         <li class="nav-item">
+            <a class="nav-link" href="#ofertas">Ofertas</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="#compras">Compras</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="#form">Formulário </a>
+         <li class="nav-item">
+            <a class="nav-link" href="#sobre">Sobre Nós</a>
+         </li>
+    </ul>
+        </div>
         </nav>
         <main>
-          <b clas="bb">Ofertas do dia:</b>
-          <div class="ofertas">
+          <b clas="bbb">Ofertas do dia:</b>
+          <div class="ofertas" id="ofertas">
             <figure>
                <img class="i3" src="Imagens/ofertadodia.jpg" alt="Ofertadodia">
                <figcaption>  <p class=p2>  OFERTAS DO DIA
@@ -140,40 +151,68 @@
              </figure>
                </div>
 
-
-
-
-            <b class="bb">Nossos produtos mais vendidos:</b>
-            <div class="produtos">
+            <b class="bbb">Nossos produtos mais vendidos:</b>
+            <div class="produtos" id="compras">
+              <div class="w-50 ">
+            <div class="h-25 ">
+              
           <div class="i3">
             <img class="i3" src="Imagens/monitor.jpg" alt="Monitor"
           loading="lazy">
             <p><figcaption>  <p class=p2>   R$ 1250.00 Monitor.</p> <br> <br>
-            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#myModal">
+            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#monitor">
               Ver detalhes
             </button>
           </div>
-          
-          <!-- The Modal -->
-          <div class="modal" id="myModal">
-            <div class="modal-dialog">
+
+          <div class="modal" id="monitor">
+            <div class="modal-dialog modal-lg">
               <div class="modal-content">
-          
-                <!-- Modal Header -->
+
                 <div class="modal-header">
                   <h4 class="modal-title">Monitor Bluecast</h4>
                   <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-          
-                <!-- Modal body -->
+
                 <div class="modal-body">
-                  <img class="i4" src="Imagens/monitor.jpg" alt="Monitor"
+                  <img class="i5" src="Imagens/monitor.jpg" alt="Monitor"
                   loading="lazy">
                   <BR>
-                  <H4>$RS 1250.00</H4>
+                  <H4>R$ 1250.00</H4>
                 </div>
-          
-                <!-- Modal footer -->
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="i3">
+            <img class="i3" src="Imagens/iphone.webp" alt="Iphone 12 Pro MAX"
+          loading="lazy">
+            <p><figcaption>  <p class=p2>   R$ 1999.99 Iphone 12 </p> <br> <br>
+            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#iphone">
+              Ver detalhes
+            </button>
+          </div>
+
+          <div class="modal" id="iphone">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+
+                <div class="modal-header">
+                  <h4 class="modal-title">Iphone 12 Pro MAX  </h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                  <img class="i5" src="imagens/iphone.webp" alt="Piscina Inflável 1000L"
+                  loading="lazy">
+                  <BR>
+                  <H4>R$ 1999.99</H4>
+                </div>
+
                 <div class="modal-footer">
                   <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
                 </div>
@@ -183,34 +222,30 @@
           </div>
 
           <div class="i3">
-            <img class="i3" src="Imagens/geladeira.jpg" alt="Geladeira"
+            <img class="i3" src="Imagens/ovo.webp" alt="Ovo da páscoa"
           loading="lazy">
-            <p><figcaption>  <p class=p2>   R$ 1999.99 Geladeira </p> <br> <br>
-            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#myModal">
+            <p><figcaption>  <p class=p2>   R$ 89.99 Ovo Psc. Lacta </p> <br> <br>
+            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#ovo">
               Ver detalhes
             </button>
           </div>
-          
-          <!-- The Modal -->
-          <div class="modal" id="myModal">
-            <div class="modal-dialog">
+
+          <div class="modal" id="ovo">
+            <div class="modal-dialog modal-lg">
               <div class="modal-content">
-          
-                <!-- Modal Header -->
+
                 <div class="modal-header">
-                  <h4 class="modal-title">Geladeira Eletrolux</h4>
+                  <h4 class="modal-title">Ovo da Páscoa Lacta</h4>
                   <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-          
-                <!-- Modal body -->
+
                 <div class="modal-body">
-                  <img class="i4" src="Imagens/geladeira.jpg" alt="Geladeira"
+                  <img class="i5" src="imagens/ovo.webp" alt="Geladeira"
                   loading="lazy">
                   <BR>
-                  <H4>$RS 1999.99</H4>
+                  <H4> R$ 89.99</H4>
                 </div>
-          
-                <!-- Modal footer -->
+
                 <div class="modal-footer">
                   <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
                 </div>
@@ -218,40 +253,32 @@
               </div>
             </div>
           </div>
-
-
-
-
           <figure>
-            <img class="i3" src="Imagens/ovo.webp" alt="Ovo da páscoa"
+            <img class="i3" src="imagens/piscina.webp" alt="Piscina Inflável 1000L"
             loading="lazy">
-            <figcaption>  <p class=p2> R$ 89.99 Ovo Psc. Lacta
+            <figcaption>  <p class=p2> R$ 125.00 Piscina Inf.
             </p></figcaption>
           </figure>
           <figure>
-            <img class="i3" src="Imagens/iphone.webp" alt="Iphone"
+            <img class="i3" src="Imagens/geladeira.jpg" alt="geladeira"
             loading="lazy">
-            <figcaption>  <p class=p2> R$ 1999.99 Iphone 12
+            <figcaption>  <p class=p2>  R$ 1999.99 Geladeira 
             </p></figcaption>
           </figure>
           <figure>
-            <img class="i3" src="Imagens/gremio.jpeg" alt="Grêmio"
+            <img class="i3" src="Imagens/gremio.jpeg" alt="Camisa do Grêmio"
             loading="lazy">
-            <figcaption>  <p class=p2>  R$ 149.99 Camisa Grêmio
-            </p></figcaption>
-          </figure>
-          <figure>
-            <img class="i3" src="Imagens/piscina.webp" alt="Piscina"
-            loading="lazy">
-            <figcaption>  <p class=p2>  R$ 125.00 Pisc. Inflável
+            <figcaption>  <p class=p2>  R$ 199.99 Camisa Grêmio
             </p></figcaption>
           </figure>
             </div>
+</div>
+</div>
 
 
 
 
-            <div class="formulario">
+            <div class="formulario" id="form">
               <b id="b">Responda o formulario:</b>
               <fieldset>
             <p class="ft">
@@ -294,7 +321,7 @@
           </div>
 
 
-         <div>
+         <div id="sobre">
 
           <b class=bb> Sobre Nós</b>
           <p class=pp> As Lojas Brasil são uma rede de lojas fundada em 2001 com o objetivo de fornecer mercadoria para todo Brasil, 
