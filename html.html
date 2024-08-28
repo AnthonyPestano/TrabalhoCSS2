@@ -9,15 +9,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="CSS/geral.css" >
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">  
   <title>Lojas Brasil</title>
-  <meta property="og:title" content="Lojas Brasil" />
-  <meta property="og:url" content="https://www.lojasbrasil.com" />
+  <meta property="og:title" content="Lojas Brasil">
+  <meta property="og:url" content="https://www.lojasbrasil.com">
      <!-- **** Descrição da página para navegadores, sites de busca, 
         dispositivos e mídias sociais (Nível do documento)
     Auxiliam na divulgação,apresentação e/ou indexação da página   -->
@@ -39,7 +33,7 @@
      -->
   <meta property="og:title" content="Lojas Brasil">
   <meta property="og:description" content="Nas Lojas Brasil você encontra todo tipo de produto, confira!">
-  <meta property="og:image" content= img src="Imagens/lojasbrasil.png">
+  <meta property="og:image" content= "https://photos.fife.usercontent.google.com/pw/AP1GczOo_4IxXGdcU0QTlrK8PgSq7WPs-no-gm?authuser=0">
   <meta property="og:url" content="https://anthonypestano.github.io/TrabalhoCSS2/html">
   <meta property="og:type" content="website">
     <!-- Exemplo de Meta tag específica para o Twitter (Twitter Card). 
@@ -49,7 +43,7 @@
   <meta name="twitter:site" content="@seuUsuario">
   <meta name="twitter:title" content="Lojas Brasil">
   <meta name="twitter:description" content="Bem vindo as Lojas Brasil, aqui você encontra todo tipo de produto, confira!">
-  <meta name="twitter:image" content= img src="Imagens/lojasbrasil.png">
+  <meta name="twitter:image" content= "https://photos.fife.usercontent.google.com/pw/AP1GczOo_4IxXGdcU0QTlrK8PgSq7WPs-no-gm?authuser=0">
     <!-- Meta tags específicas para SEO (Search Engine Optimization)(Google)-->
   <meta name="revisit-after" content="10 days">
   <meta name="robots" content="index, follow">
@@ -117,7 +111,7 @@
         </div>
         </nav>
         <main>
-          <b clas="bbb">Ofertas do dia:</b>
+          <b class="bbb">Ofertas do dia:</b>
           <div class="ofertas" id="ofertas">
             <figure>
                <img class="i3" src="Imagens/ofertadodia.jpg" alt="Ofertadodia">
@@ -157,9 +151,11 @@
             <div class="h-25 ">
               
           <div class="i3">
+            <figure>
             <img class="i3" src="Imagens/monitor.jpg" alt="Monitor"
           loading="lazy">
-            <p><figcaption>  <p class=p2>   R$ 1250.00 Monitor.</p> <br> <br>
+            <p><figcaption>  <p class=p2>   R$ 1250.00 Monitor.</p> <br> <br> </figcaption>
+            </figure>
             <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#monitor">
               Ver detalhes
             </button>
@@ -189,13 +185,15 @@
           </div>
 
           <div class="i3">
-            <img class="i3" src="Imagens/iphone.webp" alt="Iphone 12 Pro MAX"
-          loading="lazy">
-            <p><figcaption>  <p class=p2>   R$ 1999.99 Iphone 12 </p> <br> <br>
-            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#iphone">
+            <figure>
+            <img class="i3" src="Imagens/iphone.webp" alt="Iphone 12 Pro MAX" loading="lazy">
+            <p><figcaption>  <p class=p2>   R$ 1999.99 Iphone 12 </p> <br> <br> </figcaption>
+            </figure> 
+              <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#iphone">
               Ver detalhes
             </button>
           </div>
+          
 
           <div class="modal" id="iphone">
             <div class="modal-dialog modal-lg">
@@ -222,10 +220,12 @@
           </div>
 
           <div class="i3">
+            <figure>
             <img class="i3" src="Imagens/ovo.webp" alt="Ovo da páscoa"
           loading="lazy">
-            <p><figcaption>  <p class=p2>   R$ 89.99 Ovo Psc. Lacta </p> <br> <br>
-            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#ovo">
+            <p><figcaption>  <p class=p2>   R$ 89.99 Ovo Psc. Lacta </p> <br> <br> </figcaption>
+            </figure>
+              <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#ovo">
               Ver detalhes
             </button>
           </div>
@@ -240,7 +240,7 @@
                 </div>
 
                 <div class="modal-body">
-                  <img class="i5" src="Imagens/ovo.webp" alt="Ovo da Páscoa"
+                  <img id="i5" src="Imagens/ovo.webp" alt="Ovo da Páscoa"
                   loading="lazy">
                   <BR>
                   <H4> R$ 89.99</H4>
