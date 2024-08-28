@@ -199,9 +199,6 @@ nav {
   color: var(--cor-principal);
   text-align: center;
 }
-.navbar {
-  background-color:rgb(17, 190, 40);
-}
 footer {
   display: inline;
   grid-area: footer;
