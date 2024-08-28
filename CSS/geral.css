@@ -15,6 +15,7 @@
   
 }
 
+
 .inria-serif-bold {
   font-family: "Inria Serif", serif;
   font-weight: 700;
@@ -90,14 +91,42 @@ header {
 .i3{
   display: inline-block;
   width: 250px;
-  height:277px;
+  height:275px;
   padding:15px;
   background-color: var(--cor-destaque);
   border-radius:25px;
+  margin-top:50px;
   text-align: center;
   justify-content: center;
 
 }
+#i6{
+  display: inline-block;
+  width: 150px;
+  height:150px;
+  background-color: var(--cor-destaque);
+  border-radius: 20px;
+  padding:10px;
+  align-self: center;
+  }
+  #i7{
+    display: inline-block;
+    width: 150px;
+    height:150px;
+    background-color: var(--cor-destaque);
+    border-radius: 20px;
+    padding:10px;
+    align-self: center;
+    }
+    #i8{
+      display: inline-block;
+      width: 150px;
+      height:150px;
+      background-color: var(--cor-destaque);
+      border-radius: 20px;
+      padding:10px;
+      align-self: center;
+      }
 nav li{
   border: 1px double var(--cor-destaque);
   border-radius: 5px;
@@ -169,6 +198,9 @@ nav {
   background-color: var(--cor-destaque);
   color: var(--cor-principal);
   text-align: center;
+}
+.navbar {
+  background-color:rgb(17, 190, 40);
 }
 footer {
   display: inline;
@@ -242,9 +274,37 @@ header {
   height:260px;
   background-color: var(--cor-destaque);
   border-radius: 20px;
+  margin-top:50px;
   padding:10px;
   text-align: center;
 }
+#i6{
+  display: inline-block;
+  width: 250px;
+  height:250px;
+  background-color: var(--cor-destaque);
+  border-radius: 20px;
+  padding:10px;
+  align-self: center;
+  }
+  #i7{
+    display: inline-block;
+    width: 250px;
+    height:250px;
+    background-color: var(--cor-destaque);
+    border-radius: 20px;
+    padding:10px;
+    align-self: center;
+    }
+    #i8{
+      display: inline-block;
+      width: 250px;
+      height:250px;
+      background-color: var(--cor-destaque);
+      border-radius: 20px;
+      padding:10px;
+      align-self: center;
+      }
   nav li{
     border: 1px double var(--cor-destaque);
     border-radius: 5px;
@@ -382,9 +442,37 @@ font-style: normal;
     height:320px;
     background-color: var(--cor-destaque);
     border-radius:35px;
+    margin-top:50px;
     text-align: center;
 
   }
+  #i6{
+    display: inline-block;
+    width: 500px;
+    height:500px;
+    background-color: var(--cor-destaque);
+    border-radius: 20px;
+    padding:10px;
+    align-self: center;
+    }
+    #i7{
+      display: inline-block;
+      width: 500px;
+      height:500px;
+      background-color: var(--cor-destaque);
+      border-radius: 20px;
+      padding:10px;
+      align-self: center;
+      }
+      #i8{
+        display: inline-block;
+        width: 500px;
+        height:500px;
+        background-color: var(--cor-destaque);
+        border-radius: 20px;
+        padding:10px;
+        align-self: center;
+        }
   nav li{
     border: 1px double var(--cor-destaque);
     border-radius: 5px;
